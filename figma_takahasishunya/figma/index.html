@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2075年の最新スマホを紹介</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- リセットcss -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+
+    <!-- オリジナルcss -->
+    <link rel="stylesheet" href="style.css">
+    <script src="js/script.js" defer></script>
+
+    <!-- アイコンを読み込む -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<body>
+    <!-- ヘッダー部分 -->
+    <header class="header">
+        <div class="nav">
+            <div class="logo">🍎</div>
+            <ul class="menu">
+                <li><a href="#">opple</a></li>
+                <li><a href="#">gogo</a></li>
+                <li><a href="#">Somsung</a></li>
+            </ul>
+
+            <div class="menu-toggle" id="menu-toggle">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+
+        </div>
+    </header>
+
+    <div class="side-panel" id="side-panel">
+        <div class="close-btn" id="close-btn"><i class="fa-solid fa-xmark"></i></div>
+        <ul class="side-menu-list">
+            <li><a href="#">Opple Store</a></li>
+            <li><a href="#">Gogo Services</a></li>
+            <li><a href="#">Somsung Galaxy Lab</a></li>
+            <li><a href="#">2075 Special Edition</a></li>
+        </ul>
+    </div>
+    <div class="overlay" id="overlay"></div>
+
+    <p class="Really">今ならmyPhone51proが実質0円！</p>
+
+    <header class="page-header">
+        <h1 class="page-title">3機種のモデルを比較する</h1>
+        <div class="explanation">
+            <p>デザインやパフォーマンスなどの主な機能</p>
+            <p>などを一覧表示で比較できます。</p>
+        </div>
+
+
+        <h2 class="introduction">2075年の最新スマホを紹介</h2>
+        <!-- <div class="image-row">
+            <img src="Web制作_写真/Galaxy-Z-Fold7.webp" alt="">
+            <img src="Web制作_写真/iPhone Air.jpg" alt="">
+        </div> -->
+
+    </header>
+
+    <!-- カード -->
+    <div class="card-wrapper">
+        <div class="card">
+            <img src="Web制作_写真/Gemini_Generated_Image_4exri14exri14exr.png" alt="">
+            <h3>myPhone 51 pro</h3>
+            <p class="brand">ブランド：opple</p>
+            <p class="capacity">容量：512GB</p>
+            <p class="price">価格：694,800円（税込）から</p>
+            <button>詳しく</button>
+        </div>
+
+        <div class="card">
+            <img src="Web制作_写真/Gemini_Generated_Image_g8z70sg8z70sg8z7.png" alt="">
+            <h3>gogo bixel 44 pro</h3>
+            <p class="brand">ブランド：gogo</p>
+            <p class="capacity">容量：512GB</p>
+            <p class="price">価格：592,900円（税込）から</p>
+            <button>詳しく</button>
+        </div>
+
+        <div class="card">
+            <img src="Web制作_写真/Gemini_Generated_Image_2c49ax2c49ax2c49.png" alt="">
+            <h3>gulaxy x 59 ultra</h3>
+            <p class="brand">ブランド：Somsung</p>
+            <p class="capacity">容量：512GB</p>
+            <p class="price">価格：618,900円（税込）から</p>
+            <button>詳しく</button>
+        </div>
+    </div>
+
+    <!-- 比較表 -->
+    <section class="compare">
+        <h1>製品を比較</h1>
+
+        <!-- セレクトボックス -->
+        <!--  class → 複数の要素
+               　 id → 一つだけの要素 -->
+        <div class="select" id="select">
+            <select class="selectHover" onchange="changePhone()">
+                <option value="myphone">myPhone 51 pro</option>
+                <option value="bixel">bixel 44 pro</option>
+                <option value="gulaxy">gulaxy x 59 ultra</option>
+            </select>
+
+            <select class="selectHover" onchange="changePhone()">
+                <option value="myphone">myPhone 51 pro</option>
+                <option value="bixel">bixel 44 pro</option>
+                <option value="gulaxy">gulaxy x 59 ultra</option>
+            </select>
+        </div>
+
+        <!-- <div class="select">
+
+        </div> -->
+
+        <!-- 比較表 -->
+        <div class="table">
+
+            <div id="myphone" class="column show">
+                <h2>myPhone 51 Pro</h2>
+                <ul>
+                    <li><strong>デザイン</strong><br class="size">6.9インチ<br>アルミニウムUnibody</li>
+                    <li><strong>ディスプレイ</strong><br>
+                        <div class="storage-item">Super Retina XDR</div>
+                        <div class="storage-item">Nano-Wire MicroLED (自己修復型)</div>
+                        <div class="storage-item">4,800 ppi（40億画素の1:1表示対応）</div>
+                        <div class="storage-item">最大 50,000 nits</div>
+                        <div class="storage-item">周波数最大 1Hz 〜 960Hz</div> 
+                        <div class="storage-item">アダプティブ応答速度約 0.0001 ms</div>
+                        <div class="storage-item">色深度 32-bit</div>
+                    </li>
+                    <li><strong>カメラ</strong><br>
+                        4億万画素（メイン）<br>
+                        8,800万画素（超広角兼マクロ）<br>
+                        9,800万画素（望遠・光学80倍）
+                    </li>
+                    <li><strong>CPU</strong><br>A51 Proチップ<br>最大400%高パフォーマンス</li>
+                    <li><strong>バッテリー</strong><br>300時間以上<br>8,088mAh</li>
+                    <li>
+                        <strong>ストレージ</strong>
+                        <div class="storage-item">512GB<span>694,800円から</span></div>
+                        <div class="storage-item">1TB<span>779,800円から</span></div>
+                        <div class="storage-item">5TB<span>1,249,800円から</span></div>
+                    </li>
+                    <li><strong>防水防塵</strong><br>IEC規格2075にもとづくIP99-X等級（最大水深1,000メートルで最大75時間）</li>
+                    <li><strong>モバイル/ワイヤレス通信方式</strong>
+                        <div class="storage-item">64x64 Massive MIMO対応 11G（Sub-TeraWave）</div>
+                        <div class="storage-item">テラビットLTE（12G Backhaul対応）</div>
+                        <div class="storage-item">Wi-Fi 15</div>
+                        <div class="storage-item">Bluetooth 18</div>
+                        <div class="storage-item">高精度12周波 全惑星GPS</div>
+                        <div class="storage-item">第9世代 超広帯域（UWB）チップ</div>
+                    </li>
+                    <li><strong>セキュア認証</strong><br>Remote Bio-Resonance ID</li>
+                </ul>
+            </div>
+
+            <div id="bixel" class="column highlight">
+                <h2>Bixel 44 Pro</h2>
+                <ul>
+                    <li><strong>デザイン</strong><br>6.8インチ<br>アルミニウムフレーム</li>
+                    <li><strong>ディスプレイ</strong><br>
+                        <div class="storage-item">Gorilla Glass Victus</div>
+                        <div class="storage-item">Corning Gorilla Armor2 (自己修復型)</div>
+                        <div class="storage-item">4,950 ppi (40億画素 1:1ピクセル表示)</div>
+                        <div class="storage-item">最大 50,300 nits</div>
+                        <div class="storage-item">周波数最大 1Hz 〜 960Hz</div> 
+                        <div class="storage-item">アダプティブ応答速度約 0.0001 ms</div>
+                        <div class="storage-item">色深度 32-bit</div>
+                    </li>
+                    <li><strong>カメラ</strong><br>
+                        10億画素（メイン）<br>
+                        1億画素（超広角）<br>
+                        1億画素（望遠・光学100倍）
+                    </li>
+                    <li><strong>CPU</strong><br>Gogo Tensor G39<br>最大600%アップ</li>
+                    <li><strong>バッテリー</strong><br>240時間以上<br>8,200mAh</li>
+                    <li>
+                        <strong>ストレージ</strong>
+                        <div class="storage-item">512GB<span>592,900円から</span></div>
+                        <div class="storage-item">1TB<span>667,900円から</span></div>
+                        <div class="storage-item">5TB<span>1,067,900円から</span></div>
+                    </li>
+                    <li><strong>防水防塵</strong><br>IEC規格2075にもとづくIP99-X等級（最大水深1,000メートルで最大75時間）</li>
+                    <li><strong>モバイル/ワイヤレス通信方式</strong>
+                        <div class="storage-item">64x64 Massive MIMO対応 11G（Sub-TeraWave）</div>
+                        <div class="storage-item">テラビットLTE（12G Backhaul対応）</div>
+                        <div class="storage-item">Wi-Fi 15</div>
+                        <div class="storage-item">Bluetooth 18</div>
+                        <div class="storage-item">高精度12周波 全惑星GPS</div>
+                        <div class="storage-item">第9世代 超広帯域（UWB）チップ</div>
+                    </li>
+                    <li><strong>セキュア認証</strong><br>Titan Eternal Core</li>
+                </ul>
+            </div>
+
+            <div id="gulaxy" class="column sameHighlight">
+                <h2>gulaxy x 59 ultra</h2>
+                <ul>
+                    <li><strong>デザイン</strong><br>6.9インチ<br>チタニウムフレーム</li>
+                    <li><strong>ディスプレイ</strong><br>
+                        <div class="storage-item">Corning Gorilla Armor 2</div>
+                        <div class="storage-item">Corning Molecular Aegis (自己修復型)</div>
+                        <div class="storage-item">5,050 ppi (40億画素 1:1ピクセル表示)</div>
+                        <div class="storage-item">最大 55,000 nits</div>
+                        <div class="storage-item">周波数最大 1Hz 〜 960Hz</div> 
+                        <div class="storage-item">アダプティブ応答速度約 0.0001 ms</div>
+                        <div class="storage-item">色深度 32-bit</div>
+                    </li>
+                    <li><strong>カメラ</strong><br>
+                        40億画素（メイン）<br>
+                        5億画素（超広角兼マクロ）<br>
+                        2億画素（望遠、光学30倍ズーム）
+                        2億画素（望遠、光学100ズーム）
+                    </li>
+                    <li><strong>CPU</strong><br>Gualcomm Spatsdragon 8+ SuperElite for Gulaxy<br>最大 360% アップ</li>
+                    <li><strong>バッテリー</strong><br>240 時間以上<br>バッテリー容量 : 8,000mAh</li>
+                    <li>
+                        <strong>ストレージ</strong>
+                        <div class="storage-item">512GB<span>618,900円から</span></div>
+                        <div class="storage-item">1TB<span>698,900円から</span></div>
+                        <div class="storage-item">5TB<span>1,138,900円から</span></div>
+                    </li>
+                    <li><strong>防水防塵</strong><br>IEC規格2075にもとづくIP99-X等級（最大水深1,000メートルで最大75時間）</li>
+                    <li><strong>モバイル/ワイヤレス通信方式</strong>
+                        <div class="storage-item">64x64 Massive MIMO対応 11G（Sub-TeraWave）</div>
+                        <div class="storage-item">テラビットLTE（12G Backhaul対応）</div>
+                        <div class="storage-item">Wi-Fi 15</div>
+                        <div class="storage-item">Bluetooth 18</div>
+                        <div class="storage-item">高精度12周波 全惑星GPS</div>
+                        <div class="storage-item">第9世代 超広帯域（UWB）チップ</div>
+                    </li>
+                    <li><strong>セキュア認証</strong><br>Knox Event-Horizon</li>
+                </ul>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <div class="page-footer">
+            <p>本ページに掲載されている myPhone 51 Pro、bixel 44 pro、gulaxy x 59 ultra
+                に関する仕様、性能、機能、デザイン、寸法、重量、カラー、価格、発売日、提供状況、アクセサリ、ソフトウェア機能、および各種サービス内容は、発表時点における情報に基づいています。これらの情報は、製品改良、法令対応、市場状況の変化などの理由により、予告なく変更される場合があります。
+            </p>
+
+            <p>一部の機能、アプリケーション、クラウドサービス、AI機能、ネットワーク機能、セキュリティ機能は、地域、国、言語、通信事業者、契約内容、料金プラン、ソフトウェアバージョン、OSのアップデート状況により利用できない場合があります。5G、LTE、Wi-Fi、Bluetooth、NFC、位置情報サービスなどの利用には、対応するネットワーク環境および有効な契約が必要です。通信速度は理論値であり、実際の通信速度は電波状況や混雑状況により異なります。
+            </p>
+
+            <p>バッテリー駆動時間、動画再生時間、音楽再生時間、待受時間などの数値は、特定のテスト条件下において測定された代表値です。実際の使用時間は、利用状況、設定、バックグラウンド動作、アプリケーションの使用状況、ディスプレイの明るさ、通信環境、温度条件、バッテリーの経年劣化などの複数の要因により大きく異なる場合があります。バッテリーは消耗品であり、使用とともに性能が低下します。
+            </p>
+
+            <p>ディスプレイサイズは対角線の長さで測定しています。角の丸みやカメラ部分、センサー領域などの設計上の制約により、実際の表示可能領域は小さくなる場合があります。最大リフレッシュレートは使用するアプリケーション、コンテンツ、設定に応じて自動的に変動する場合があります。HDR、色再現性、輝度などの表示性能は視聴環境によって体感が異なります。
+            </p>
+
+            <p>カメラ性能およびズーム倍率は、撮影環境、光量、被写体との距離、手ブレ補正機能、画像処理アルゴリズムなどの条件により結果が異なります。光学ズーム倍率はレンズ構成に基づくものであり、デジタルズームや画像補完処理が含まれる場合があります。AI処理による画像補正機能は、被写体やシーンによって最適化されます。
+            </p>
+
+            <p>CPU性能、GPU性能、AI処理性能、パフォーマンス向上率などの数値は、従来モデルとの比較または特定条件下での社内試験結果に基づいています。実際の性能は、使用するアプリケーション、ソフトウェア最適化、温度条件、バックグラウンド処理などにより異なります。
+            </p>
+
+            <p>ストレージ容量の一部は、システムファイルおよびプリインストールアプリケーションによって使用されます。利用可能な容量は初期設定やソフトウェア更新により変動する場合があります。</p>
+
+            <p>防水・防塵性能は、特定の試験条件下で評価されたものです。経年劣化や物理的損傷により性能が低下する場合があります。水濡れや液体侵入による故障は保証対象外となる場合があります。</p>
+
+            <p>製品の在庫状況、販売価格、キャンペーン内容、分割払い条件、下取りプログラム、保証内容、およびサポートサービスは、販売店、通信事業者、オンラインストアにより異なります。詳細は各販売チャネルまたは公式サポート窓口へお問い合わせください。
+            </p>
+
+            <p>掲載されている製品画像はイメージです。実際の製品とは色味、質感、仕上げが異なる場合があります。アクセサリは別売りの場合があります。</p>
+
+            <p>本ページに記載された内容の全部または一部の無断転載、複製、改変を禁じます。</p>
+        </div>
+    </footer>
+
+    <div class="sns-links">
+        <a href="#" class="sns-icon"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="#" class="sns-icon"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#" class="sns-icon"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#" class="sns-icon"><i class="fa-brands fa-youtube"></i></a>
+    </div>
+
+    <div class="Copyright">
+        <small>&copy;2075 phone Inc. All rights reserved.</small>
+    </div>
+
+
+</body>
+
+</html>
